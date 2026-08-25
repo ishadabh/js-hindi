@@ -2,7 +2,7 @@
 // Object.create
 
 
-// object declaration first way
+// object declaration first way bu literals
 const jsUser = {};
 
 
