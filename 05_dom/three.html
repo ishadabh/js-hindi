@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+
+</body>
+<script>
+    let div = document.createElement('div');
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor="green";
+    div.style.padding="12px"
+    div.innerHTML="Chai Aur Code" // ye values ko overrie krta h
+    // alter way 
+    const addText = document.createTextNode("Chai aur Code");
+    div.appendChild(addText);
+    // all the things are done here but not visible 
+    // div is in memory but in the page 
+    // first we have to attached to page
+    
+    document.body.appendChild(div)
+
+</script>
+</html>
